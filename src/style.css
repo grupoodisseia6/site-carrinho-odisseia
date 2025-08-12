@@ -81,14 +81,48 @@
     .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
     .reveal.show{opacity:1;transform:none}
 
-    /* Responsive */
-    @media (max-width:980px){
-      .hero{grid-template-columns:1fr;gap:26px}
-      .visual{width:100%;height:360px}
-      .h1{font-size:36px}
-      .grid-3{grid-template-columns:1fr;}
-      .container{padding:18px}
-    }
+ 
+/* Responsividade geral */
+@media (max-width:980px){
+  .hero{
+    grid-template-columns:1fr;
+    gap:26px;
+  }
+  .visual{
+    width:100%;
+    height:360px;
+  }
+  .h1{
+    font-size:36px;
+  }
+  .grid-3{
+    grid-template-columns:1fr;
+  }
+  .container{
+    padding:18px;
+  }
+}
+
+/* Avatares no celular - 2 por linha */
+@media (max-width: 600px) {
+  .avatars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 89px;
+    justify-items: center;
+  }
+
+  .avatar {
+    width: 64px;
+    height: 64px;
+  }
+
+  .avatar-name {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
 
     /* small polish */
     a:focus{outline:2px dashed var(--accent);outline-offset:4px}
