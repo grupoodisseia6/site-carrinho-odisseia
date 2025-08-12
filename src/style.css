@@ -108,7 +108,7 @@
   .avatars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 89px;
+    gap: 26px;
     justify-items: center;
   }
 
