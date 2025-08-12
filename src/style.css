@@ -114,7 +114,8 @@
 
   .avatar {
     width: 64px;
-    height: 64px;
+    height: 64px
+    padding-right: 16px;
   }
 
   .avatar-name {
