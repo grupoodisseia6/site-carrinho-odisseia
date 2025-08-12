@@ -103,12 +103,12 @@
   }
 }
 
-/* Avatares no celular - 2 por linha */
+/* Avatares no celular - 3 por linha */
 @media (max-width: 600px) {
   .avatars {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    gap: 26px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
     justify-items: center;
   }
 
