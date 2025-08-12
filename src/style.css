@@ -108,14 +108,13 @@
   .avatars {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 32px;
     justify-items: center;
   }
 
   .avatar {
     width: 64px;
     height: 64px
-    padding-right: 16px;
   }
 
   .avatar-name {
