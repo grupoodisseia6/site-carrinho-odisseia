@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projeto Carrinho Seguelinha — Landing</title>
+    <meta
+      name="description"
+      content="Landing page do projeto Carrinho Seguelinha — peças, entregantes e demonstração."
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <div class="brand__logo" aria-hidden>FS</div>
+          <div class="brand__name">Faculdade • Laboratório</div>
+        </div>
+        <nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="inicio">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="title-hero">
+        <div class="hero__content">
+          <div class="eyebrow reveal">Projeto de Robótica — 2025</div>
+          <h1 id="title-hero" class="h1 reveal">
+            Projeto Carrinho <br />Seguelinha
+          </h1>
+          <p class="lead reveal">
+            Carrinho seguidor de linha autônomo — ideal para demonstrações de
+            controle embarcado e lógica de sensores.
+          </p>
+
+          <div
+            class="reveal"
+            style="display: flex; gap: 12px; align-items: center"
+          >
+            <button class="cta" id="openDemo">Ver em ação</button>
+            <a
+              href="#peças"
+              style="
+                color: var(--muted);
+                text-decoration: none;
+                font-weight: 600;
+              "
+              >Ver peças usadas →</a
+            >
+          </div>
+        </div>
+
+        <div class="visual-wrap">
+          <div
+            class="visual"
+            id="visual"
+            role="img"
+            aria-label="Imagem do carrinho seguelinha"
+          >
+            <!-- Substitua o src pela foto/ilustração real do carrinho -->
+            <img
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%230b1113'/><text x='50%' y='50%' fill='%23ffffff' font-family='Inter,Arial' font-size='26' text-anchor='middle'>Insira aqui a imagem do carrinho</text></svg>"
+              alt="Imagem do carrinho"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- CARDS -->
+      <section
+        class="grid-3"
+        id="projetos"
+        aria-label="Peças, entregantes e funcionalidade"
+      >
+        <div class="card reveal" id="peças">
+          <h3>Peças Utilizadas</h3>
+          <ul class="parts">
+            <li>Placa Arduino Uno / controladora</li>
+            <li>Rodas e chassi</li>
+            <li>Sensores de linha (IR)</li>
+            <li>Bateria recarregável</li>
+          </ul>
+        </div>
+
+        <div class="card reveal" id="entregantes">
+          <h3>Entregantes</h3>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 12px;
+            "
+          >
+            <div class="avatars">
+              <div>
+                <div class="avatar">
+                  <img src="src/img/foto-do-integrante-Bryan.png" alt="Bryan" />
+                </div>
+                <div class="avatar-name">
+                  <a href="https://github.com/Bryan" target="_blank">Bryan</a>
+                </div>
+              </div>
+              <div>
+                <div class="avatar">
+                  <img src="src/img/foto-do-integrante-Danilo.png" alt="Danilo" />
+                </div>
+                <div class="avatar-name">
+                  <a href="https://github.com/DanSNPDev" target="_blank"
+                    >Danilo</a
+                  >
+                </div>
+              </div>
+              <div>
+                <div class="avatar">
+                  <img src="src/img/foto-do-integrante-Felippe.png" alt="Felippe" />
+                </div>
+                <div class="avatar-name">
+                  <a href="https://github.com/Felippe-nobre" target="_blank"
+                    >Felippe</a
+                  >
+                </div>
+              </div>
+              <div>
+                <div class="avatar">
+                  <img src="src/img/grupoodisseia.jpg" alt="Luan" />
+                </div>
+                <div class="avatar-name">
+                  <a href="https://github.com/grupoodisseia6" target="_blank">Odisseia</a>
+                </div>
+              </div>
+              <div>
+                <div class="avatar">
+                  <img src="src/img/foto-do-integrante-Iris.png" alt="Iris" />
+                </div>
+                <div class="avatar-name">
+                  <a href="https://github.com/Iris" target="_blank">Iris</a>
+                </div>
+              </div>
+              <div>
+                <div class="avatar">
+                  <img src="src/img/foto-do-integrante-Luan.png" alt="Luan" />
+                </div>
+                <div class="avatar-name">
+                  <a href="https://github.com/Luan" target="_blank">Luan</a>
+                </div>
+              </div>
+              <div>
+                <div class="avatar">
+                  <img src="#" alt="Matheus" />
+                </div>
+                <div class="avatar-name">
+                  <a href="#" target="_blank">Matheus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal" id="funcionalidade">
+          <h3>Funcionalidade</h3>
+          <p class="muted">
+            O carrinho segue autonomamente uma linha preta desenhada no piso. A
+            lógica de controle lê os sensores de linha e corrige a velocidade
+            dos dois motores para manter o centro sobre a linha.
+          </p>
+        </div>
+      </section>
+
+      <div class="strip reveal" style="margin-top: 38px">
+        <div>
+          <strong style="display: block">Quer ver em funcionamento?</strong>
+          <span class="muted"
+            >Clique em "Ver em ação" para abrir um vídeo ou demonstração.</span
+          >
+        </div>
+        <div>
+          <button class="cta" id="openDemo2">Abrir demonstração</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal (demo) -->
+   <div
+  id="modal"
+  role="dialog"
+  aria-hidden="true"
+  aria-labelledby="modalTitle"
+  style="
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 1200;
+  "
+>
+  <div
+    style="position: absolute; inset: 0; background: rgba(2, 6, 23, 0.7)"
+    data-close
+  ></div>
+  <div
+    style="
+      max-width: 1000px;
+      width: 100%;
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: var(--card-shadow);
+      position: relative;
+      overflow-y: auto;
+      max-height: 80vh;
+    "
+  >
+    <button
+      aria-label="Fechar"
+      id="closeModal"
+      style="
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        background: transparent;
+        border: none;
+        color: var(--muted);
+        font-size: 18px;
+        cursor: pointer;
+      "
+    >
+      ✕
+    </button>
+    <h2 id="modalTitle" style="margin-top: 4px">
+      Demonstração — Projetos Carrinhos
+    </h2>
+    <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 24px;">
+      <video
+        src="src/img/Vídeo do WhatsApp de 2025-08-12 à(s) 14.15.45_16754839.mp4"
+        controls
+        preload="metadata"
+        style="width: 100%; height: 360px; border-radius: 8px;"
+      >
+        Vídeo do Carrinho 1
+      </video>
+      
+      <video
+        src="src/img/video-carrinho2.mp4"
+        controls
+        preload="metadata"
+        style="width: 100%; height: 360px; border-radius: 8px;"
+      >
+        Vídeo do Carrinho 2
+      </video>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
