@@ -1,279 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Projeto Carrinho Seguelinha — Landing</title>
-    <meta
-      name="description"
-      content="Landing page do projeto Carrinho Seguelinha — peças, Integrantes e demonstração."
-    />
-    <link rel="stylesheet" href="/src/style.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projeto Carrinho Seguelinha — Landing</title>
+  <meta
+    name="description"
+    content="Landing page do projeto Carrinho Seguelinha — peças, Integrantes e demonstração."
+  />
 
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container nav">
-        <div class="brand">
-          <div class="brand__logo" aria-hidden>FS</div>
-          <div class="brand__name">Faculdade • Laboratório</div>
-        </div>
-        <nav aria-label="Navegação principal">
-          <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/style.css" />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- =====================================
+       HEADER / NAV
+  ===================================== -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden>FS</div>
+        <div class="brand__name">Faculdade • Laboratório</div>
       </div>
-    </header>
-
-    <main class="container" id="inicio">
-      <!-- HERO -->
-      <section class="hero" aria-labelledby="title-hero">
-        <div class="hero__content">
-          <div class="eyebrow reveal">Projeto de Robótica — 2025</div>
-          <h1 id="title-hero" class="h1 reveal">
-            Projeto Carrinho <br />Seguelinha
-          </h1>
-          <p class="lead reveal">
-            Carrinho seguidor de linha autônomo — ideal para demonstrações de
-            controle embarcado e lógica de sensores.
-          </p>
-
-          <div
-            class="reveal"
-            style="display: flex; gap: 12px; align-items: center"
-          >
-            <button class="cta" id="openDemo">Ver em ação</button>
-            <a
-              href="#peças"
-              style="
-                color: var(--muted);
-                text-decoration: none;
-                font-weight: 600;
-              "
-              >Ver peças usadas →</a
-            >
-          </div>
-        </div>
-
-        <div class="visual-wrap">
-          <div
-            class="visual"
-            id="visual"
-            role="img"
-            aria-label="Imagem do carrinho seguelinha"
-          >
-            <!-- Substitua o src pela foto/ilustração real do carrinho -->
-            <img
-              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%230b1113'/><text x='50%' y='50%' fill='%23ffffff' font-family='Inter,Arial' font-size='26' text-anchor='middle'>Insira aqui a imagem do carrinho</text></svg>"
-              alt="Imagem do carrinho"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- CARDS -->
-      <section
-        class="grid-3"
-        id="projetos"
-        aria-label="Peças, Integrantes e funcionalidade"
-      >
-        <div class="card reveal" id="peças">
-          <h3>Peças Utilizadas</h3>
-            <ul class="parts">
-          <li>Placa Arduino Uno</li>
-          <li>Shield L293D (driver de motores)</li>
-          <li>4 Motores DC com rodas</li>
-          <li>Chassi acrílico</li>
-          <li>4 Sensores infravermelhos (IR) para linha</li>
-          <li>Sensor Ultrassônico HC-SR04</li>
-          <li>Módulo Bluetooth HC-05</li>
-          <li>Bateria recarregável / power bank</li>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-        </div>
+      </nav>
+    </div>
+  </header>
 
-        <div class="card reveal" id="Integrantes">
-          <h3>Integrantes</h3>
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-              gap: 12px;
-            "
-          >
-            <div class="avatars">
-              <div>
-                <div class="avatar">
-                  <img src="src/img/foto-do-integrante-Bryan.png" alt="Bryan" />
-                </div>
-                <div class="avatar-name">
-                  <a href="https://github.com/Bryan" target="_blank">Bryan</a>
-                </div>
-              </div>
-              <div>
-                <div class="avatar">
-                  <img src="src/img/foto-do-integrante-Danilo.png" alt="Danilo" />
-                </div>
-                <div class="avatar-name">
-                  <a href="https://github.com/DanSNPDev" target="_blank"
-                    >Danilo</a
-                  >
-                </div>
-              </div>
-              <div>
-                <div class="avatar">
-                  <img src="src/img/foto-do-integrante-Felippe.png" alt="Felippe" />
-                </div>
-                <div class="avatar-name">
-                  <a href="https://github.com/Felippe-nobre" target="_blank"
-                    >Felippe</a
-                  >
-                </div>
-              </div>
-              <div>
-                <div class="avatar">
-                  <img src="src/img/foto-do-integrante-Iris.png" alt="Iris" />
-                </div>
-                <div class="avatar-name">
-                  <a href="https://github.com/Iris" target="_blank">Iris</a>
-                </div>
-              </div>
-              <div>
-                <div class="avatar">
-                  <img src="src/img/foto-do-integrante-Luan.png" alt="Luan" />
-                </div>
-                <div class="avatar-name">
-                  <a href="https://github.com/Luan" target="_blank">Luan</a>
-                </div>
-              </div>
-              <div>
-                <div class="avatar">
-                  <img src="#" alt="Matheus" />
-                </div>
-                <div class="avatar-name">
-                  <a href="#" target="_blank">Matheus</a>
-                </div>
-              </div>
-            </div>
-<div>
-                <div class="avatar">
-                  <img src="src/img/grupoodisseia.jpg" alt="Luan" />
-                </div>
-                <div class="avatar-name">
-                  <a href="https://github.com/grupoodisseia6" target="_blank">Odisseia</a>
-                </div>
-              </div>
-          </div>
+  <!-- =====================================
+       MAIN CONTENT
+  ===================================== -->
+  <main class="container" id="inicio">
 
-        </div>
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="title-hero">
+      <div class="hero__content">
+        <div class="eyebrow reveal">Projeto de Robótica — 2025</div>
+        <h1 id="title-hero" class="h1 reveal">
+          Projeto Carrinho <br />Seguelinha
+        </h1>
+        <p class="lead reveal">
+          Carrinho seguidor de linha autônomo — ideal para demonstrações de
+          controle embarcado e lógica de sensores.
+        </p>
 
-        <div class="card reveal" id="funcionalidade">
-          <h3>Funcionalidade</h3>
-          <p class="muted">
-            O carrinho segue autonomamente uma linha preta desenhada no piso. A
-            lógica de controle lê os sensores de linha e corrige a velocidade
-            dos dois motores para manter o centro sobre a linha.
-          </p>
-        </div>
-      </section>
-
-      <div class="strip reveal" style="margin-top: 38px">
-        <div>
-          <strong style="display: block">Quer ver em funcionamento?</strong>
-          <span class="muted"
-            >Clique em "Ver em ação" para abrir um vídeo ou demonstração.</span
-          >
-        </div>
-        <div>
-          <button class="cta" id="openDemo2">Abrir demonstração</button>
+        <div class="hero-buttons reveal">
+          <button class="cta" id="openDemo">Ver em ação</button>
+          <a href="#peças" class="hero-link">Ver peças usadas →</a>
         </div>
       </div>
-    </main>
 
-    <!-- Modal (demo) -->
-   <div
-  id="modal"
-  role="dialog"
-  aria-hidden="true"
-  aria-labelledby="modalTitle"
-  style="
-    position: fixed;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    z-index: 1200;
-  "
->
-  <div
-    style="position: absolute; inset: 0; background: rgba(2, 6, 23, 0.7)"
-    data-close
-  ></div>
-  <div
-    style="
-      max-width: 1000px;
-      width: 100%;
-      background: var(--surface);
-      border-radius: 12px;
-      padding: 18px;
-      box-shadow: var(--card-shadow);
-      position: relative;
-      overflow-y: auto;
-      max-height: 80vh;
-    "
-  >
-    <button
-      aria-label="Fechar"
-      id="closeModal"
-      style="
-        position: absolute;
-        right: 12px;
-        top: 12px;
-        background: transparent;
-        border: none;
-        color: var(--muted);
-        font-size: 18px;
-        cursor: pointer;
-      "
-    >
-      ✕
-    </button>
-    <h2 id="modalTitle" style="margin-top: 4px">
-      Demonstração — Projetos Carrinhos
-    </h2>
-    <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 24px;">
-      <video
-        src="src/img/Vídeo do WhatsApp de 2025-08-12 à(s) 14.15.45_16754839.mp4"
-        controls
-        preload="metadata"
-        style="width: 100%; height: 360px; border-radius: 8px;"
-      >
-        Vídeo do Carrinho 1
-      </video>
-      
-      <video
-        src="src/img/video-carrinho2.mp4"
-        controls
-        preload="metadata"
-        style="width: 100%; height: 360px; border-radius: 8px;"
-      >
-        Vídeo do Carrinho 2
-      </video>
-    </div>
-  </div>
+      <div class="visual-wrap">
+        <div
+          class="visual"
+          id="visual"
+          role="img"
+          aria-label="Imagem do carrinho seguelinha"
+        >
+          <img
+            src="src/img/robo-seguidor-de-linha-com-arduino-projeto-maker-1920x1080.jpg"
+            alt="Imagem do carrinho"
+          />
+        </div>
+      </div>
+    </section>
+
+   <!-- =====================================
+     CARDS SECTION PROFISSIONALIZADA
+===================================== -->
+<section class="grid-3" id="projetos" aria-label="Peças, Integrantes e funcionalidade">
+
+  <!-- Peças Utilizadas -->
+<div class="card reveal" id="peças">
+  <h3>Peças Utilizadas</h3>
+  <ul class="parts-list">
+    <li>Placa Arduino Uno</li>
+    <li>Shield L293D (driver de motores)</li>
+    <li>4 Motores DC com rodas</li>
+    <li>Chassi acrílico</li>
+    <li>4 Sensores infravermelhos (IR) para linha</li>
+    <li>Sensor Ultrassônico HC-SR04</li>
+    <li>Módulo Bluetooth HC-05</li>
+    <li>Bateria recarregável / power bank</li>
+  </ul>
 </div>
 
 
+  <!-- Integrantes -->
+  <div class="card reveal Integrantes" id="Integrantes">
+    <h3>Integrantes</h3>
+    <div class="avatars-grid">
+      <div class="avatar-card">
+        <div class="avatar">
+          <img src="src/img/foto-do-integrante-Bryan.png" alt="Bryan" />
+        </div>
+        <div class="avatar-name">
+          <a href="https://github.com/Bryan" target="_blank">Bryan</a>
+        </div>
+      </div>
+      <div class="avatar-card">
+        <div class="avatar">
+          <img src="src/img/foto-do-integrante-Danilo.png" alt="Danilo" />
+        </div>
+        <div class="avatar-name">
+          <a href="https://github.com/DanSNPDev" target="_blank">Danilo</a>
+        </div>
+      </div>
+      <div class="avatar-card">
+        <div class="avatar">
+          <img src="src/img/foto-do-integrante-Felippe.png" alt="Felippe" />
+        </div>
+        <div class="avatar-name">
+          <a href="https://github.com/Felippe-nobre" target="_blank">Felippe</a>
+        </div>
+      </div>
+       <!-- Avatar do grupo -->
+      <div class="avatar-card">
+        <div class="avatar">
+          <img src="src/img/grupoodisseia.jpg" alt="Odisseia" />
+        </div>
+        <div class="avatar-name">
+          <a href="https://github.com/grupoodisseia6" target="_blank">Odisseia</a>
+        </div>
+        </div>
+      <div class="avatar-card">
+        <div class="avatar">
+          <img src="src/img/foto-do-integrante-Iris.png" alt="Iris" />
+        </div>
+        <div class="avatar-name">
+          <a href="https://github.com/Iris" target="_blank">Iris</a>
+        </div>
+      </div>
+      <div class="avatar-card">
+        <div class="avatar">
+          <img src="src/img/foto-do-integrante-Luan.jpg" alt="Luan" />
+        </div>
+        <div class="avatar-name">
+          <a href="https://github.com/Luan" target="_blank">Luan</a>
+        </div>
+      </div>
+      <div class="avatar-card">
+        <div class="avatar">
+          <img src="src/img/foto-do-integrante-matheus.png" alt="Matheus" />
+        </div>
+        <div class="avatar-name">
+          <a href="https://github.com/Matt-Neves" target="_blank">Matheus</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  <!-- Funcionalidade -->
+  <div class="card reveal" id="funcionalidade">
+    <h3>Funcionalidade</h3>
+    <ul class="features">
+      <li><span class="icon">🎯</span> Segue autonomamente a linha preta no piso</li>
+      <li><span class="icon">⚙️</span> Controla a velocidade dos motores para manter o centro da linha</li>
+      <li><span class="icon">🔊</span> Sensor ultrassônico detecta obstáculos</li>
+      <li><span class="icon">📱</span> Pode ser monitorado via módulo Bluetooth</li>
+    </ul>
+  </div>
+</section>
 
-    <script src="src/index.js"></script>
-  </body>
+
+    <!-- STRIP CTA -->
+    <div class="strip reveal">
+      <div>
+        <strong>Quer ver em funcionamento?</strong>
+        <span class="muted">
+          Clique em "Ver em ação" para abrir um vídeo ou demonstração.
+        </span>
+      </div>
+      <div>
+        <button class="cta" id="openDemo2">Abrir demonstração</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- =====================================
+       MODAL (DEMONSTRAÇÃO)
+  ===================================== -->
+  <div id="modal" role="dialog" aria-hidden="true" aria-labelledby="modalTitle" class="modal">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-content">
+      <button aria-label="Fechar" id="closeModal" class="modal-close">✕</button>
+      <h2 id="modalTitle">Demonstração — Projetos Carrinhos</h2>
+      <div class="modal-videos">
+        <video src="src/img/video-carrinho1.mp4" controls preload="metadata"></video>
+        <video src="src/img/video-carrinho2.mp4" controls preload="metadata"></video>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="src/index.js"></script>
+</body>
 </html>
